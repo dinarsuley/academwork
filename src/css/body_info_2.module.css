@@ -3,7 +3,10 @@
     height: 800px;
     background-color: #ffffff;
 }
-
+.man{
+    float: left;
+    margin-top: 300px;
+}
 .main{
     height: 800px;
     display: grid;

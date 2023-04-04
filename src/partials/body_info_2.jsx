@@ -1,11 +1,13 @@
 import Body_style from"../css/body_info_2.module.css";
 import "../App.css";
 import star from "../imgs/star.svg";
+import man from "../imgs/eblan.svg";
 import Adv from "./advantage.jsx";
 
 const Body_info2 = () =>{
     return(
         <div className={Body_style.back}>
+            <img src={man} alt="man" className={Body_style.man} />
             <div className="container">
                 <div className={Body_style.main}>
                     <div className={Body_style.headtxt}>

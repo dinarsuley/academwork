@@ -1,9 +1,14 @@
 import logo from "./../imgs/logo.svg";
 import header_styles from "../css/header.module.css";
 import "./../App.css";
+import Modal from "../partials/modal";
+import { useState } from "react";
 
 const Header = ()=>{
+    const [modalActive, setModalActive] = useState(true);
     return(
+    <div>
+        <Modal active = {modalActive} setActive={setModalActive}/>
         <div className="container">
             <header className={header_styles.header}>
                 <div className={header_styles.logo}>
@@ -37,7 +42,7 @@ const Header = ()=>{
                         </div>
                     </nav>
                     <div className={header_styles.nav_btn_container}>
-                        <button className={header_styles.nav_btn}>
+                        <button className={header_styles.nav_btn} onClick={()=>setModalActive(true)}>
                             Личный кабинет
                         </button>
                     </div> 
@@ -45,7 +50,10 @@ const Header = ()=>{
                 
             </header>
         </div>
+        
+    </div> 
     );
 }
 
 export default Header;
+export let modalActive, setModalActive;
