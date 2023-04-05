@@ -1,10 +1,21 @@
 import Body_style from "../css/body_info_1.module.css"
+import Modal from "./modal.jsx";
 import "../App.css"
 import main_img from "../imgs/main-img1.svg";
+import { useState } from "react";
 
 const Body_info_1 = () =>{
+    const[modalExpertActive, setModalExpertActive] = useState(false);
+    const[modalPushActive, setModalPushActive] = useState(false);
     return(
-        <div className="container">
+        <div>
+            <Modal active = {modalExpertActive} setActive={setModalExpertActive}>
+                EXPERT
+            </Modal>
+            <Modal active = {modalPushActive} setActive={setModalPushActive}>
+                PUSH
+            </Modal>
+            <div className="container">
             <div className={Body_style.container}>
                 <div className={Body_style.main}>
                     <div className={Body_style.main_info}>
@@ -18,10 +29,10 @@ const Body_info_1 = () =>{
                             Платформа, объединяющая студентов, котрым нужна помощь и экспертов, готовых ее предоставить
                         </div>
                         <div>
-                            <button className={Body_style.btn1}>
+                            <button className={Body_style.btn1} onClick={()=>setModalPushActive(true)}>
                                 Разместить задание
                             </button>
-                            <button className={Body_style.btn2}>
+                            <button className={Body_style.btn2} onClick={()=>setModalExpertActive(true)}>
                                 Стать экспертом
                             </button>
                         </div>
@@ -75,6 +86,8 @@ const Body_info_1 = () =>{
                 </div>
             </div>
         </div>
+        </div>
+
     );
 }
 

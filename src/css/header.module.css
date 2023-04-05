@@ -69,14 +69,12 @@
 }
 .nav_btn_container{
     grid-area: btn;
+    
 }
-.nav_btn{
+.nav_btn_container button{
     margin-top: 13px;
     float: right;
-    
-
     box-sizing: border-box;
-
     width: 170px;
     height: 50px;
     border-radius: 50px;
@@ -88,5 +86,15 @@
     font-weight: 900;
     font-size: 14px;
     line-height: 120%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav_btn_container button:hover{
+    width: 172px;
+    height: 52px;
+    background:
+        linear-gradient(to right, #FBFF32, #FF961C) border-box,
+        linear-gradient(white, white) padding-box;
 }
 

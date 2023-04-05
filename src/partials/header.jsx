@@ -45,7 +45,7 @@ const Header = ()=>{
                         </div>
                     </nav>
                     <div className={header_styles.nav_btn_container}>
-                        <button className={header_styles.nav_btn} onClick={()=>setModalActive(true)}>
+                        <button  onClick={()=>setModalActive(true)}>
                             Личный кабинет
                         </button>
                     </div> 

@@ -52,7 +52,7 @@
     margin-top: 50px;
 
     box-sizing: border-box;
-
+    cursor: pointer;
     width: 240px;
     height: 60px;
     border-radius: 50px;
@@ -63,12 +63,21 @@
     font-weight: 900;
     font-size: 14px;
     line-height: 120%;
+    transition: all 0.4s ease;
+}
+.btn1:hover{
+    width: 243px;
+    height: 63px;
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #FBFF32, #FF961C) border-box;
+    
 }
 .btn2{
     margin-top: 50px;
     margin-left: 20px;
     box-sizing: border-box;
-
+    cursor: pointer;
     width: 240px;
     height: 60px;
     border-radius: 50px;
@@ -80,8 +89,14 @@
     font-weight: 900;
     font-size: 14px;
     line-height: 120%;
+    transition: all 0.4s ease;
 }
-
+.btn2:hover{
+    width: 243px;
+    height: 63px;
+    background:
+        linear-gradient(to right, #FBFF32, #FF961C) border-box;
+}
 .main_img{
     grid-area: img;
     margin-top: 45px;
