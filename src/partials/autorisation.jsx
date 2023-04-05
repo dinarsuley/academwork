@@ -11,10 +11,10 @@ const Autorisation = ()=>{
                 Войти в личный кабинет
             </div>
             <div className={styles.inputs}>
-                <input type="text" className={styles.input} autofocus/>
+                <input type="text" placeholder="Логин" className={styles.input} autofocus/>
             </div>
             <div className={styles.inputs}>
-                <input type="text" className={styles.input}/>
+                <input type="password" placeholder="Пароль" className={styles.input}/>
             </div>
             <div className={styles.div_btn}>
                 <button className={styles.btn}>

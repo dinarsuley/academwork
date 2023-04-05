@@ -20,12 +20,19 @@
     text-align: center;
 }
 .input{
+    padding: 20px;
     width: 300px;
     height: 60px;
     box-sizing: border-box;
     background: #F8F8F8;
     border: 1px solid #E0E0E0;
     border-radius: 3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #999999;
 }
 .div_btn{
     text-align: center;
