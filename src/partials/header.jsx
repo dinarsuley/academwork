@@ -2,13 +2,16 @@ import logo from "./../imgs/logo.svg";
 import header_styles from "../css/header.module.css";
 import "./../App.css";
 import Modal from "../partials/modal";
+import Autorisation from "./autorisation";
 import { useState } from "react";
 
 const Header = ()=>{
-    const [modalActive, setModalActive] = useState(true);
+    const [modalActive, setModalActive] = useState(false);
     return(
     <div>
-        <Modal active = {modalActive} setActive={setModalActive}/>
+        <Modal active = {modalActive} setActive={setModalActive}>
+            <Autorisation/>
+        </Modal>
         <div className="container">
             <header className={header_styles.header}>
                 <div className={header_styles.logo}>
